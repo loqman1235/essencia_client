@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-openSans overflow-x-hidden;
+  }
+  .primary_btn {
+    @apply px-8 py-3 bg-[#008080] text-white flex items-center justify-center w-fit font-semibold hover:bg-[#007373] transition gap-2;
+  }
+
+  .secondary_btn {
+    @apply px-8 py-3 border border-black text-black flex items-center justify-center w-fit font-semibold hover:bg-black hover:text-white transition gap-2;
+  }
+}
