@@ -17,7 +17,6 @@ const ProductPage = () => {
   const cartProduct = cart.find((item) => item._id === product._id);
   const qty = cartProduct ? cartProduct.qty : 0;
   const { id } = useParams();
-  console.log(product.images);
   useEffect(() => {
     // Get Product By Id
     const getProduct = async () => {
@@ -39,7 +38,9 @@ const ProductPage = () => {
       <div className="bg-[#FDF6E9] p-5 w-full md:w-2/5 h-[400px] animate__animated animate__fadeInLeft overflow-hidden">
         <img
           className="w-full h-full object-contain"
-          src={`http://localhost:3001/${product.images && product.images[0]}`}
+          src={`https://essencia-backend.onrender.com/${
+            product.images && product.images[0]
+          }`}
           alt={product.name}
         />
       </div>
