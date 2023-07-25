@@ -27,7 +27,7 @@ const Hero = () => {
         {/* Right section */}
         <div>
           <img
-            src="public/hero_photo.png"
+            src="https://essencia-client-pzya.vercel.app/public/hero_photo.png"
             className="object-contain animate__animated animate__fadeInRight"
           />
         </div>
