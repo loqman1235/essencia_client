@@ -66,7 +66,7 @@ const Cart = () => {
                       </h3>
                       <p className="uppercase">{product.volume} ml</p>
                       <span className="text-[#088080]  font-semibold">
-                        ${product.price.toFixed(2)}
+                        ${Number(product.price).toFixed(2)}
                       </span>
                     </div>
                   </td>
@@ -74,7 +74,7 @@ const Cart = () => {
                     <p className="font-semibold">{product.qty}</p>
                   </td>
                   <td className="text-[#088080] font-semibold px-0">
-                    ${product.price * product.qty.toFixed(2)}
+                    ${Number(product.price * product.qty).toFixed(2)}
                   </td>
                   <td className="px-0">
                     <button
@@ -89,7 +89,9 @@ const Cart = () => {
             </tbody>
           </table>
           <div className="w-full flex items-center justify-between">
-            <h3 className="text-lg font-bold">Total: ${total.toFixed(2)}</h3>
+            <h3 className="text-lg font-bold">
+              Total: ${Number(total).toFixed(2)}
+            </h3>
             <button
               className="primary_btn"
               onClick={() => {
