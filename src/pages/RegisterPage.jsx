@@ -7,7 +7,6 @@ const RegisterPage = () => {
   const [inputs, setInputs] = useState({
     username: "",
     email: "",
-    address: "",
     password: "",
     password_conf: "",
   });
@@ -27,7 +26,6 @@ const RegisterPage = () => {
         setInputs({
           username: "",
           email: "",
-          address: "",
           password: "",
           password_conf: "",
         });
@@ -87,26 +85,6 @@ const RegisterPage = () => {
             />
             {errors.email && (
               <p className="text-sm text-red-600">{errors.email}</p>
-            )}
-          </div>
-
-          <div className="flex flex-col gap-2 w-full mb-4">
-            <label htmlFor="address" className="text-sm  text-gray-500">
-              Adresse de livraison
-            </label>
-            <input
-              type="text"
-              placeholder=""
-              id="address"
-              name="address"
-              className={`border ${
-                !errors.address ? "border-gray-200 " : "border-red-600 "
-              } outline-none p-3 w-full`}
-              onChange={handleInputChange}
-              value={inputs.address}
-            />
-            {errors.address && (
-              <p className="text-sm text-red-600">{errors.address}</p>
             )}
           </div>
 
