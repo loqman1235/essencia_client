@@ -55,9 +55,7 @@ const Cart = () => {
                   <td className="flex items-center gap-5 px-0">
                     <div className="w-20 h-20 p-2 overflow-hidden bg-[#FDF6E9]">
                       <img
-                        src={`https://essencia-backend.onrender.com/${
-                          product.images && product.images[0]
-                        }`}
+                        src={product.images && product.images[0].url}
                         alt={product.name}
                         className="w-full h-full object-cover"
                       />
