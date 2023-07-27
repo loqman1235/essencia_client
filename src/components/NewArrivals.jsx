@@ -67,7 +67,7 @@ const NewArrivals = () => {
               <ProductCard
                 productId={product._id}
                 productName={product.name}
-                productImg={product.images[0]}
+                productImg={product.images[0].url}
                 productPrice={product.price}
               />
             </SwiperSlide>

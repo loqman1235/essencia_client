@@ -38,9 +38,7 @@ const ProductPage = () => {
       <div className="bg-[#FDF6E9] p-5 w-full md:w-2/5 h-[400px] animate__animated animate__fadeInLeft overflow-hidden">
         <img
           className="w-full h-full object-contain"
-          src={`https://essencia-backend.onrender.com/${
-            product.images && product.images[0]
-          }`}
+          src={product.images && product.images[0].url}
           alt={product.name}
         />
       </div>

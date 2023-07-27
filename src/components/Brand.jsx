@@ -8,11 +8,7 @@ const Brand = ({ image, name, brandId }) => {
       to={`/brands/${brandId}`}
       className="bg-white shadow flex items-center justify-center p-10 rounded-md animate__animated animate__fadeIn"
     >
-      <img
-        src={`https://essencia-backend.onrender.com/${image}`}
-        alt={name}
-        className="object-contain"
-      />
+      <img src={image} alt={name} className="object-contain" />
     </Link>
   );
 };

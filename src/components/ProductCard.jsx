@@ -9,7 +9,7 @@ const ProductCard = ({ productId, productName, productImg, productPrice }) => {
         {/* Product Image */}
         <div className="w-[180px] h-[180px]">
           <img
-            src={`https://essencia-backend.onrender.com/${productImg}`}
+            src={productImg}
             alt={productName}
             className="object-contain w-full h-full"
           />

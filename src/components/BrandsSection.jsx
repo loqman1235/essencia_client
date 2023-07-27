@@ -57,7 +57,7 @@ const BrandsSection = () => {
           <Brand
             key={brand._id}
             name={brand.name}
-            image={brand.image}
+            image={brand.image.url}
             brandId={brand._id}
           />
         ))}
